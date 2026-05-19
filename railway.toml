@@ -1,11 +1,7 @@
-generator client {
-  provider = "prisma-client-js"
-}
+[build]
+builder = "nixpacks"
 
-datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
-}
-
-# Note: This app uses raw PostgreSQL with pg library
-# For Prisma alternative, use: prisma migrate dev --name init
+[deploy]
+startCommand = "npm start"
+healthcheckPath = "/api/health"
+healthcheckTimeout = 100
