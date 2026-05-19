@@ -1,0 +1,41 @@
+{
+  "name": "gtm-linkedin-setup-app",
+  "version": "1.0.0",
+  "description": "Interactive GTM + LinkedIn conversion tracking setup application",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'Build step - no build needed for this setup'"
+  },
+  "keywords": [
+    "gtm",
+    "google-tag-manager",
+    "linkedin",
+    "conversion-tracking",
+    "analytics"
+  ],
+  "author": "Verkko.ai",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.1.2",
+    "express-session": "^1.17.3",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "compression": "^1.7.4",
+    "helmet": "^7.1.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
